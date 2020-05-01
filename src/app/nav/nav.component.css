@@ -1,3 +1,29 @@
+nav {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #012549;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+}
+
 a {
   margin-right: 10px;
+  color: white;
+  padding: 16px 10px;
+  border-bottom: 4px solid transparent;
 }
+
+nav a:hover,
+nav a:active,
+nav a.active {
+        background-color: #8F5C2C;
+        border-bottom: 4px solid #40A4C8;
+        color: white;
+    }

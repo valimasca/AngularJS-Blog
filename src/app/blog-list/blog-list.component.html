@@ -1,6 +1,8 @@
 <h2>Blog list</h2>
 <ul>
-    <li *ngFor="let blog of blogs">{{blog.name}} is a type of {{blog.content}}
+    <li *ngFor="let blog of blogs"><strong>Blog Name </strong>{{blog.name}} <br/> <strong>Blog Type: </strong> {{blog.category}}
+        <br/><strong>Read my Blog: </strong>{{blog.content}}
+        <br/>
         <button (click)="deleteBlog(blog.id)">Delete Blog</button>
         <a [routerLink]="['/edit', blog.id]"><button>Edit</button></a>
     </li>
